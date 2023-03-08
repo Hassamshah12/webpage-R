@@ -1,0 +1,16 @@
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
+
+menu.onclick = () =>{
+    manu.classlist.toggle('bx-x');
+    navlist.classList.toggle('open');
+};
+
+const sr = scrollReveal ({
+    distance: '65px',
+    duration: 2600,
+    delay: 450,
+    reset: true,
+});
+sr.reveal('.hero-text',{delay:200,origin:'top'});
+
